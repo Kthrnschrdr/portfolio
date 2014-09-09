@@ -1,7 +1,7 @@
 class LinksController < ApplicationController
   
   def index
-    @links = Links.all
+    @links = Link.all
   end
   
   def new

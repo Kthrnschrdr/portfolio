@@ -18,7 +18,7 @@ Portfolio::Application.routes.draw do
   get "links/index" => 'links#index', :as =>"links"
   get "links/new" => 'links#new', :as =>"new_link"
   post "links/index" => 'links#create'
-  get "links/:id" => 'links#show', :as =>"links"
+  get "links/:id" => 'links#show', :as =>"link"
   get "links/:id/edit" => 'links#edit', :as =>"edit_link"
   put "links/:id" => 'links#update'
 
