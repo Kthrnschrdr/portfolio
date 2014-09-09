@@ -7,5 +7,12 @@ Portfolio::Application.routes.draw do
   get "projects/:id" => 'projects#show', :as =>"project"
   get "projects/:id/edit" => 'projects#edit', :as =>"edit_project"
   put "projects/:id" => 'projects#update'
+  
+  get "contacts/index" => 'contacts#index', :as =>"contacts"
+  get "contacts/new" => 'contacts#new', :as =>"new_contact"
+  post "contacts/index" => 'contacts#create'
+  get "contacts/:id" => 'contacts#show', :as =>"contact"
+  get "contacts/:id/edit" => 'contacts#edit', :as =>"edit_contact"
+  put "contacts/:id" => 'contacts#update'
 
 end
