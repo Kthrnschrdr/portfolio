@@ -3,7 +3,7 @@ Portfolio::Application.routes.draw do
   
   get "projects/index" => 'projects#index', :as =>"projects"
   get "projects/new" => 'projects#new', :as =>"new_project"
-  post "projects/" => 'projects#create'
+  post "projects/index" => 'projects#create'
   get "projects/:id" => 'projects#show', :as =>"project"
 
 end
