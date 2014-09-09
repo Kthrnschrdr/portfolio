@@ -1,0 +1,23 @@
+<h1>New Project</h1>
+
+<!-- Creates a POST request to "/users" -->
+<%= @form_for @project do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :summary %>
+  <%= f.text_field :summary %>
+
+  <%= f.label :status %>
+  <%= f.text_field :status%>
+  
+  <%= f.label :github %>
+  <%= f.text_field :github %>
+  
+  <%= f.label :lesson %>
+  <%= f.text_field :lesson %>
+
+  <%= f.submit %>
+
+<% end %>
