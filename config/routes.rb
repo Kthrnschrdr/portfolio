@@ -1,9 +1,9 @@
 Portfolio::Application.routes.draw do
   get "home" => 'pages#welcome'
   
-  get "projects/index" => 'projects#index'
-  get "project/new" => 'project#new'
-  post "projects" => 'projects#create'
-  get "projects/:id" => 'projects#show'
+  get "projects/index" => 'projects#index', :as =>"projects"
+  get "projects/new" => 'projects#new', :as =>"new_project"
+  post "projects/" => 'projects#create'
+  get "projects/:id" => 'projects#show', :as =>"project"
 
 end

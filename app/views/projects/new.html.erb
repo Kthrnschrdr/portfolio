@@ -1,7 +1,10 @@
 <h1>New Project</h1>
 
-<!-- Creates a POST request to "/users" -->
-<%= @form_for :project do |f| %>
+<% @project.errors.full_messages.each do |msg| %>
+  <p><%= msg %></p>
+<% end %>
+
+<%= form_for @project do |f| %>
 
   <%= f.label :name %>
   <%= f.text_field :name %>
