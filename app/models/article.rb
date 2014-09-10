@@ -3,8 +3,8 @@ class Article < ActiveRecord::Base
   
   def excerpt
     @article = Article.find(params[:id])
-    excerptsplit = @article.body.split("")
-    @excerpt = 
+    excerptarray = @article.body.split("")
+    @excerpt = excerptarray[0...29].join("")
   end
   
   def relative_length
