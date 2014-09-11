@@ -19,8 +19,8 @@ class ArticlesController < ApplicationController
   
   def show
      @article = Article.find(params[:id])
-     @length = @article.relative_length
-     @excerpt = @article.excerpt
+     @length = @article.relative_length(@article.body)
+     @excerpt = @article.excerpt(@article.body)
   end
   
   def edit
