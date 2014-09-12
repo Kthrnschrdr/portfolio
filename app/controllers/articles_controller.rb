@@ -22,6 +22,10 @@ class ArticlesController < ApplicationController
      @article = Article.find(params[:id])
      @length = @article.relative_length(@article.body)
      @excerpt = @article.excerpt(@article.body)
+     @like = Like.new({ip_address: request.remote_ip, article_id: params[:id]})
+     @likes = Like.where(article_id: @article.id)
+     @likes = @article.likes
+     @like = Like.create({article_id: @article.id, ip_address: request.remote_ip})
   end
   
   def edit
