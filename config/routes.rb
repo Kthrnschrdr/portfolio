@@ -5,7 +5,7 @@ Portfolio::Application.routes.draw do
   post "login" => 'logins#create', :as => "create_login"
   
   post "create_user" => 'users#create', :as => "create_user"
-  get signup => 'users#new', :as => "signup"
+  # get signup => 'users#new', :as => "signup"
   
   get "projects/index" => 'projects#index', :as =>"projects"
   get "projects/new" => 'projects#new', :as =>"new_project"
