@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     
-    if @user && @user.save
+    if @user.save
       redirect root_path
     else
       raise "Invalid.  Please try again."

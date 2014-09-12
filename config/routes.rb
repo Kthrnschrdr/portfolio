@@ -7,6 +7,8 @@ Portfolio::Application.routes.draw do
   post "create_user" => 'users#create', :as => "create_user"
   get "signup" => 'users#new', :as => "signup"
   
+  get "like/:article_id" => 'likes#new', :as => "like"
+  
 resources :projects
 resources :contacts
 resources :links
