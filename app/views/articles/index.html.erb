@@ -1,5 +1,11 @@
+<%= link_to ("Create an account", signup_path) %>
+<%= link_to ("Log in", login_path) %>
+
+
 <% @articles.each do |article| %>
   <p><%= link_to( article.title, article_path(article.id) ) %></p>
 <% end %>
 
-<%= link_to( "New Article", new_article_path) %>
+<% if current_user %>
+  <%= link_to( "New Article", new_article_path) %>
+<% end %>
