@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(params[:article])
 
     if @article.save
-      redirect_to articles_path
+      redirect_to articles_path, :notice => "Article saved!"
     else
       render "new"
     end
@@ -35,10 +35,16 @@ class ArticlesController < ApplicationController
   def update
     @article = Article.find(params[:id])
     if @article.update_attributes(params[:article])
-      redirect_to articles_path
+      redirect_to articles_path, :notice => "Article updated!"
     else
       render "edit"
     end
   end
+  
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+    
+    redirect_to articles_path
 
 end

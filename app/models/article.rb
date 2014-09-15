@@ -1,6 +1,8 @@
 class Article < ActiveRecord::Base
+  require "markdown_processor"
   attr_accessible :body, :draft, :title
   
+  has_many :likes
   # scope :long where(relative_length => "long")
   # scope :is_featured where(featured => true)
   
@@ -21,6 +23,10 @@ class Article < ActiveRecord::Base
   end
   
   def featured
+  end
+  
+  def html_body
+    MarkdownProcessor.convert_to_h1(self.body)
   end
   
 end

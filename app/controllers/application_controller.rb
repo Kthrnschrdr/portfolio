@@ -5,11 +5,10 @@ class ApplicationController < ActionController::Base
   
     def authorize
       if current_user.nil?
-        redirect_to login_path
+        redirect_to login_path, :alert => "Please log in."
       end
     end
   
-    # This method is available in all controllers.
     def current_user
       if session[:user_id]
         @current_user ||= User.find(session[:user_id])
