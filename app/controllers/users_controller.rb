@@ -8,9 +8,10 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     
     if @user.save
-      redirect root_path
+      redirect_to root_path
     else
-      raise "Invalid.  Please try again."
+      flash[:alert] = "Invalid.  Please try again."
+      render 'new'
     end
   end
 end
