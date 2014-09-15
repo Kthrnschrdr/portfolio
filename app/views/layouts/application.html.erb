@@ -6,6 +6,19 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
+<header> 
+	<div id="name">Kathryn Schroeder</div>
+	<ul>
+		<li><%= link_to "Projects", projects_path %></li>
+		<li><%= link_to "Contact", new_contact_path %></li>
+		<li><%= link_to "News", articles_path %></li>
+		<li> About </li>
+		<li><%= link_to "Links", links_path %></li>
+    </ul>
+	<div id="clear_float"></div>
+</header>
+
 <body>
 	
 <% if flash[:notice] %>
@@ -15,7 +28,7 @@
 <p id="alert"><%= flash[:alert] %></p>
 <% end %>
 <% if current_user %>
- Logged in as <%= current_user.email %> (<%= link_to ("Log out", logout_path) %>)
+ Logged in as <%= current_user.email %>
 <% else %>
   You are not logged in.
 <% end %>

@@ -1,0 +1,25 @@
+header #name {
+	font-size: xx-large;
+	float: left;
+}
+
+header ul {
+	float: right;
+}
+
+header li {
+	padding: 20px;
+	text-transform: uppercase;
+	display: inline-block
+}
+
+header #clear_float {
+	clear: both;
+}
+
+#notice{
+  color: green;
+}
+#alert{
+  color: red;
+}
