@@ -2,10 +2,10 @@
   <p><%= link_to contact.name, contact_path(contact.id) %></p>
 <% end %>
 
-<%= form_for @contacts do |contact| %>
-  <%= f.label :replied %>
-  <%= f.check_box :replied  %>
-  <%= f.submit %>
-<% end %>
+<!-- <%=# form_for @contacts do |contact| %>
+  <%=# f.label :replied %>
+  <%=# f.check_box :replied  %>
+  <%=# f.submit %>
+<%# end %> -->
 
 <%= link_to "New Contact", new_contact_path %>

@@ -1,20 +1,69 @@
+header {
+	position: absolute;
+	width: 100%;	
+}
+
 header #name {
-	font-size: xx-large;
+	font-family: 'Forum', cursive;
+	font-size: 40px;
 	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+	color: #FFF8EF;
+}
+#name p {
+	font-size: 20px;
+	text-align: center;
 }
 
 header ul {
 	float: right;
+	margin-right: 30px;
+	margin-top: 30px;
 }
 
 header li {
-	padding: 20px;
-	text-transform: uppercase;
-	display: inline-block
+	font-family: 'Forum', cursive;
+	font-size: x-large;
+	padding: 10px;
+	display: inline-block;
+	color: #FFF8EF;
 }
 
 header #clear_float {
 	clear: both;
+}
+
+body {
+	width: 100%;
+	height: 600px;
+	background: url("http://imgur.com/HKKj7SL.jpg") no-repeat;
+	background-size: cover;
+	font-family: 'Linden Hill', serif;
+}
+
+#contact_form {
+	font-family: 'Forum', cursive;
+	float: left;
+	margin-left: 30px;
+}
+
+a:link {
+  color: #F7F1E8;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #F7F1E8;
+}
+
+a:hover {
+  color: #00A0B0;
+  text-decoration: none;
+} 
+
+a:active {
+  color: #F5C4FF;
 }
 
 #notice{
