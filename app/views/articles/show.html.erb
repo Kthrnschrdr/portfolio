@@ -1,8 +1,9 @@
 <h1><%= @article.title %></h1>
+<div class="article">
   <p><%=@excerpt %></p>
-<h2><%= @article.draft %></h2>
-<h2><%= @length %></h2>
-
+  <p><%= @article.draft %></p>
+  <p><%= @length %></p>
+</div>
 
 <%= link_to "Edit Article", edit_article_path(@article.id) %>
 

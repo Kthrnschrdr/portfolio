@@ -1,3 +1,5 @@
-<% @links.each do |link| %>
-  <p><%= link_to link.name, link_path(link.id) %></p>
-<% end %>
+<div class="links">
+  <% @links.each do |link| %>
+    <p><%= link_to link.name, link_path(link.id) %></p>
+  <% end %>
+</div>

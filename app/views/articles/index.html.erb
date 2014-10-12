@@ -1,7 +1,9 @@
-
-<% @articles.each do |article| %>
-  <p><%= link_to article.title, article_path(article.id)  %></p>
-<% end %>
+<h1>All Articels</h1>
+<div class="articles">
+  <% @articles.each do |article| %>
+    <p><%= link_to article.title, article_path(article.id)  %></p>
+  <% end %>
+</div>
 
 <% if current_user %>
   <%= link_to "New Article", new_article_path %>

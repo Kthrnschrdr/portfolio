@@ -1,24 +1,16 @@
-<h1>Sign Up</h1>
-
-<%= form_for @user, :url => create_user_path do |f| %>
-
-  <p>
+<div class="form_field">
+  <h1>Sign Up</h1>
+  <%= form_for @user, :url => create_user_path do |f| %>
     <%= f.label :email %>
     <%= f.text_field :email %>
-  </p>
-  
-  <p>
     <%= f.label :password %>
     <%= f.password_field :password %>
-  </p>
-  
-  <p>
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %>
-  </p>
-  
-  <%= f.submit %>
-
-<% end %>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>
 
 <%= link_to "Home", root_path %>

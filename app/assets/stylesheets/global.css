@@ -1,6 +1,9 @@
 header {
 	position: absolute;
 	width: 100%;	
+  color: #FF8CF1;
+  height: 40px;
+  opacity: 30%;
 }
 
 header #name {

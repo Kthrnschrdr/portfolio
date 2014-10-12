@@ -1,8 +1,10 @@
 <h1><%= @project.name %></h1>
-<h2><%= @project.summary %></h2>
-<h2><%= link_to"Take a Look!", (@project.github) %></h2>
-<h2><%= @project.lesson %></h2>
-<h2><%= @project.status %></h2>
+<div class="project">
+  <h2><%= @project.summary %></h2>
+  <h2><%= link_to"Take a Look!", (@project.github) %></h2>
+  <h2><%= @project.lesson %></h2>
+  <h2><%= @project.status %></h2>
+</div>
 
 <% if current_user %>
 <%= link_to "Edit Project", edit_project_path %>

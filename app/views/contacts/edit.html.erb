@@ -1,23 +1,2 @@
 <h1>Edit Contact</h1>
-
-<% @contact.errors.full_messages.each do |msg| %>
-  <p><%= msg %></p>
-<% end %>
-
-<%= form_for @contact do |f| %>
-
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-
-  <%= f.label :email %>
-  <%= f.text_field :email%>
-
-  <%= f.label :subject %>
-  <%= f.text_field :subject%>
-  
-  <%= f.label :message %>
-  <%= f.text_area :message %>
-
-  <%= f.submit %>
-
-<% end %>
+<%= render "form" %>
