@@ -1,4 +1,4 @@
-<h1>All Articels</h1>
+<h1>All Articles</h1>
 <div class="articles">
   <% @articles.each do |article| %>
     <p><%= link_to article.title, article_path(article.id)  %></p>

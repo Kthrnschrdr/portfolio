@@ -1,13 +1,13 @@
 <div class="form_field">
   <%= form_for @article do |f| %>
     <%= f.label :title %>
-    <%= f.text_field :title %>
+    <p><%= f.text_field :title %></p>
     <%= f.label :body %>
-    <%= f.text_field :body%>
+    <p><%= f.text_field :body%></p>
     <%= f.label :draft %>
     <%= f.check_box :draft %>
   <div class="action">
-   <%= f.submit %>
+   <p><%= f.submit %></p>
   </div>
   <% end %>
 </div>

@@ -2,32 +2,38 @@ header {
 	position: absolute;
 	width: 100%;	
   color: #FF8CF1;
+  background-color: #3D3D3D;
   height: 40px;
-  opacity: 30%;
+  opacity: 0.5;
+  height: 100px;
+  clear: both;
 }
 
 header #name {
 	font-family: 'Forum', cursive;
-	font-size: 40px;
+	font-size: xx-large;
 	float: left;
-	margin-left: 30px;
-	margin-top: 30px;
+  width: 35%;
+	margin-left: 5%;
+	margin-top: 2%;
 	color: #FFF8EF;
 }
+ 
 #name p {
-	font-size: 20px;
+	font-size: large;
 	text-align: center;
 }
 
 header ul {
 	float: right;
-	margin-right: 30px;
-	margin-top: 30px;
+	margin-right: 5%;
+	margin-top: 2%;
 }
 
 header li {
 	font-family: 'Forum', cursive;
 	font-size: x-large;
+  text-transform: lowercase;
 	padding: 10px;
 	display: inline-block;
 	color: #FFF8EF;
@@ -45,10 +51,50 @@ body {
 	font-family: 'Linden Hill', serif;
 }
 
+h1 {
+  margin-top: 10%;
+  text-transform: uppercase;
+  color: darkgoldenrod;
+  text-align: center;
+  margin-right: 5%;
+}
+
 #contact_form {
 	font-family: 'Forum', cursive;
 	float: left;
 	margin-left: 30px;
+}
+
+.actions {
+  width: 80%;
+  border
+}
+
+.form_field {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #EDEFE4;
+  opacity: 0.5;
+  border-radius: 10px; 
+  width: 70%;
+  height: 100%;
+  color: #2B4D71;
+  margin-bottom: 5%;
+}
+
+.links, .projects, .contacts, .articles {
+  font-family: 'Forum', cursive;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: xx-large;
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #EDEFE4;
+  color: #2B4D71;
+  opacity: 0.5;
+  border-radius: 10px; 
 }
 
 a:link {
