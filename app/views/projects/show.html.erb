@@ -7,6 +7,6 @@
 </div>
 
 <% if current_user %>
-<%= link_to "Edit Project", edit_project_path %>
-<%= link_to "Destroy Project", delete_project_path %>
+<div class="bottom link"><%= link_to "Edit Project", edit_project_path %></div>
+<div class="bottom link"><%= link_to "Destroy Project", project_path, action: "destroy", id: @project %></div>
 <% end %>

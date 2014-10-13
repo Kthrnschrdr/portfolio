@@ -4,10 +4,10 @@
   <% end %>
   <%= form_for @link do |f| %>
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <p><%= f.text_field :name %></p>
     <%= f.label :url %>
-    <%= f.text_field :url %>
-    <div class="actions">
+    <p><%= f.text_field :url %></p>
+    <div class="action">
       <%= f.submit %>
     </div>
   <% end %>

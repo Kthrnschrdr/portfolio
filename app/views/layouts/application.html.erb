@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
+<link href='http://fonts.googleapis.com/css?family=Give+You+Glory' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Forum' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Linden+Hill:400,400italic' rel='stylesheet' type='text/css'>
 <head>
   <title>Portfolio</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -9,35 +9,38 @@
   <%= csrf_meta_tags %>
 </head>
 
-<header> 
-	<div id="name">Kathryn Schroeder
-	<p>web development</p>
-	</div>
-	<ul>
-		<li><%= link_to "Projects", projects_path %></li>
-		<li><%= link_to "Contact", new_contact_path %></li>
-		<li><%= link_to "News", articles_path %></li>
-		<li> About </li>
-		<li><%= link_to "Links", links_path %></li>
-		<li><%= link_to "Home", root_path %></li>
-    </ul>
-	<div id="clear_float"></div>
-</header>
+<div class="container">
+  <header> 
+    <div class="profile_pic"><img src=""></img>
+    <div id="name">Kathryn Schroeder
+    <p>web development</p>
+    </div>
+    <ul>
+      <li><%= link_to "Projects", projects_path %></li>
+      <li><%= link_to "Contact", new_contact_path %></li>
+      <li><%= link_to "News", articles_path %></li>
+      <li> About </li>
+      <li><%= link_to "Links", links_path %></li>
+      <li><%= link_to "Home", root_path %></li>
+      </ul>
+    <div id="clear_float"></div>
+  </header>
 
-<body>
-	
-<div class="flash">
-  <% if flash[:notice] %>
-    <p id="notice"><%= flash[:notice] %></p>
-  <% end %>
-  <% if flash[:alert] %>
-    <p id="alert"><%= flash[:alert] %></p>
-  <% end %>
-  <% if current_user %>
-     Logged in as <%= current_user.email %>
-  <% else %>
-    You are not logged in.
-  <% end %>
+  <body>
+    <div class="flash">
+      <% if flash[:notice] %>
+        <p id="notice"><%= flash[:notice] %></p>
+      <% end %>
+      <% if flash[:alert] %>
+        <p id="alert"><%= flash[:alert] %></p>
+      <% end %>
+      <% if current_user %>
+         Logged in as <%= current_user.email %>
+      <% else %>
+        You are not logged in.
+      <% end %>
+    </div>
+  </body>
 </div>
 
 <%= yield %>

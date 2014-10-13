@@ -4,14 +4,14 @@
   <% end %>
   <%= form_for @project do |f| %>
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <p><%= f.text_field :name %></p>
     <%= f.label :summary %>
-    <%= f.text_field :summary %>
+    <p><%= f.text_field :summary %></p>
     <%= f.label :status %>
-    <%= f.text_field :status%>
+    <p><%= f.text_field :status%></p>
     <%= f.label :github %>
-    <%= f.text_field :github %>
-    <div class="actions">
+    <p><%= f.text_field :github %></p>
+    <div class="action">
       <%= f.submit %>
     </div>
   <% end %>

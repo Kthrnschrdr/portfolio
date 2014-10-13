@@ -1,0 +1,168 @@
+$font: 'Forum', cursive;;
+$fancy_font: 'Give You Glory', cursive;
+$ivory: #FFF8EF;
+$charcoal: #3D3D3D;
+$lavender: #F8B8FF;
+$aqua: #2EB3C0;
+$navy: #2B4D71;
+
+header li {
+	font-family: $fancy_font;
+  text-transform: lowercase;
+	color: $ivory;
+  @media only screen and (max-width: 320px) {
+    font-size: large;
+    width: 100%;
+    background-color: $charcoal;
+    text-decoration: none;
+  }
+  @media only screen and (min-width: 321px) and (max-width: 1199px) {
+    font-size: large;
+    display: inline-block;
+    padding: 2%;
+  }
+  @media screen and (min-width: 1200px) {
+  	padding: 2%;
+  	display: inline-block;
+    font-size: x-large;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header #name {
+    font-size: xx-large;
+  }
+}
+
+.container {
+	background: url("http://i.imgur.com/wR2c5Fy.jpg") no-repeat;
+	background-size: cover;
+}
+
+header {
+	position: absolute;
+	width: 100%;	
+  color: $lavender;
+  background-color: $charcoal;
+  height: 15%;
+  opacity: 0.5;
+}
+
+header #name {
+	font-family: $font;
+	font-size: x-large;
+	float: left;
+  width: 30%;
+	margin-left: 2%;
+	margin-top: 2%;
+	color: $ivory;
+}
+ 
+#name p {
+	font-size: large;
+	text-align: center;
+}
+
+header ul {
+	float: right;
+  width: 55%;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+
+header #clear_float {
+	clear: both;
+}
+
+h1 {
+  margin-top: 10%;
+  text-transform: uppercase;
+  color: darkgoldenrod;
+  text-align: center;
+  margin-right: 5%;
+}
+
+#contact_form {
+	font-family: $font;
+	float: left;
+	margin-left: 30px;
+}
+
+.action {
+  width: 20%;
+  border-radius: 10px;
+  height: 5%;
+  background-color: $aqua;
+  color: $ivory;
+  font-family: $font;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.form_field {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: $font;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: large;
+  background-color: $ivory;
+  opacity: 0.5;
+  border-radius: 10px; 
+  width: 70%;
+  height: 100%;
+  color: $navy;
+  margin-bottom: 5%;
+}
+
+.links, .projects, .contacts, .articles {
+  color: $navy;
+  font-family: $font;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: xx-large;
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: $ivory;
+  opacity: 0.5;
+  border-radius: 10px; 
+}
+
+a:link {
+  color: $navy;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $aqua;
+}
+
+a:hover {
+  color: $aqua;
+  text-decoration: none;
+} 
+
+a:active {
+  color: $lavender;
+}
+
+#notice{
+  color: green;
+}
+#alert{
+  color: red;
+}
+
+.bottom_link {
+  width: 10%;
+  float: right;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  font-family: $fancy_font;
+  background-color: $aqua;
+  border-radius: 10px;
+  color: $navy;
+  height: 5%;
+}
