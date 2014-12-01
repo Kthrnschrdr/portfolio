@@ -49,36 +49,14 @@ header {
 }
 
 header #name {
-<<<<<<< HEAD
 	font-family: $fancy_font;
   text-transform: uppercase;
 	font-size: 50px;
-=======
-	font-family: $font;
-	font-size: x-large;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 0e79339... fixing css
-=======
->>>>>>> parent of 0e79339... fixing css
-=======
->>>>>>> parent of 0e79339... fixing css
 	float: left;
   width: 45%;
 	margin-left: 2%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 	margin-top: 3%;
 	color: $navy;
-=======
-=======
->>>>>>> parent of 0e79339... fixing css
-=======
->>>>>>> parent of 0e79339... fixing css
-	margin-top: 2%;
-	color: $ivory;
->>>>>>> parent of 0e79339... fixing css
 }
  
 #name p {
@@ -97,7 +75,7 @@ header #clear_float {
 	clear: both;
 }
 
-h1 {
+h1, h2 {
   padding-top: 220px;
   text-transform: uppercase;
   color: #B8860B;
@@ -112,16 +90,16 @@ h1 {
 	margin-left: 30px;
 }
 
-//.action {
-//  width: 20%;
-//  border-radius: 10px;
-//  height: 5%;
-//  background-color: $aqua;
-//  color: $ivory;
-//  font-family: $font;
-//  text-align: center;
-//  text-transform: lowercase;
-//}
+.action {
+  width: 20%;
+  border-radius: 10px;
+  height: 5%;
+  background-color: $aqua;
+  color: $navy;
+  font-family: $font;
+  text-align: center;
+  text-transform: lowercase;
+}
 
 .form_field {
   text-align: center;
@@ -140,7 +118,7 @@ h1 {
   margin-bottom: 5%;
 }
 
-.links, .projects, .contacts, .articles {
+.links, .projects, .contacts {
   color: $navy;
   font-family: $font;
   text-align: center;
@@ -165,7 +143,7 @@ a:visited {
 }
 
 a:hover {
-  color: $aqua;
+  color: $lavender;
   text-decoration: none;
 } 
 

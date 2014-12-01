@@ -4,7 +4,7 @@
 <link href='http://fonts.googleapis.com/css?family=Forum' rel='stylesheet' type='text/css'>
 <head>
   <title>Portfolio</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
@@ -19,14 +19,10 @@
       <li><%= link_to "Projects", projects_path %></li>
       <li><%= link_to "About", links_path %></li>
       <li><%= link_to "Contact", new_contact_path %></li>
-<<<<<<< HEAD
-=======
-      <li><%= link_to "News", articles_path %></li>
-      <li> About </li>
-      <li><%= link_to "Links", links_path %></li>
-      <li><%= link_to "Home", root_path %></li>
->>>>>>> parent of 0e79339... fixing css
-      </ul>
+      <% if current_user = nil %>
+      <li><%= link_to "Log In", login_path %></li>
+      <% end %>
+    </ul>
     <div id="clear_float"></div>
   </header>
 
@@ -45,9 +41,9 @@
       <% end %>
     </div>
   </body>
-</div>
 
 <%= yield %>
 
 </body>
+</div>
 </html>
