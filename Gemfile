@@ -6,6 +6,8 @@ gem 'rails', '3.2.19'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'carrierwave'
+gem 'rmagick', :require => "RMagick"
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
