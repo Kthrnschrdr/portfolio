@@ -1,10 +1,9 @@
 <h1><%= @project.name %></h1>
 <div class="project">
   <p><%= @project.summary %></p>
+  <div class="middle_link"><p><%= link_to"View the CODE on Github", (@project.github) %></p></div>
+  <div class="middle_link"><p><a href=<%= @project.status %>>Visit the project on Heroku</a></p></div>
   <img src=<%= @project.photo %>>
-  <p><%= link_to"View my branch of the CODE on Github.", (@project.github) %></p>
-  <p><%= @project.lesson %></p>
-  <p><a href=<%= @project.status %>>Visit the project on the web!</a></p>
 </div>
 
 <% if current_user %>
