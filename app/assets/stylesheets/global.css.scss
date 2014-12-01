@@ -75,9 +75,16 @@ header #clear_float {
 	clear: both;
 }
 
-h1, h2 {
+h1 {
   padding-top: 220px;
   text-transform: uppercase;
+  color: #B8860B;
+  text-align: center;
+  margin-right: 5%;
+  position: relative;
+}
+
+p {
   color: #B8860B;
   text-align: center;
   margin-right: 5%;
@@ -131,6 +138,10 @@ h1, h2 {
   background-color: $ivory;
   border-radius: 10px; 
   position: relative;
+}
+
+.project {
+  text-align: center;
 }
 
 a:link {

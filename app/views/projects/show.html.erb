@@ -1,10 +1,10 @@
 <h1><%= @project.name %></h1>
 <div class="project">
-  <h2><%= @project.summary %></h2>
+  <p><%= @project.summary %></p>
   <img src=<%= @project.photo %>>
-  <h2><%= link_to"Take a Look!", (@project.github) %></h2>
-  <h2><%= @project.lesson %></h2>
-  <h2><%= @project.status %></h2>
+  <p><%= link_to"View my branch of the code on Github.", (@project.github) %></p>
+  <p><%= @project.lesson %></p>
+  <p><%= @project.status %></p>
 </div>
 
 <% if current_user %>
