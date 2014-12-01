@@ -2,9 +2,9 @@
 <div class="project">
   <p><%= @project.summary %></p>
   <img src=<%= @project.photo %>>
-  <p><%= link_to"View my branch of the code on Github.", (@project.github) %></p>
+  <p><%= link_to"View my branch of the CODE on Github.", (@project.github) %></p>
   <p><%= @project.lesson %></p>
-  <p><%= @project.status %></p>
+  <p><a href=<%= @project.status %>>Visit the project on the web!</a></p>
 </div>
 
 <% if current_user %>

@@ -1,5 +1,5 @@
-$font: 'Forum', cursive;;
-$fancy_font: 'Give You Glory', cursive;
+$font: 'Lora', serif;
+$fancy_font: 'Monoton', cursive;
 $ivory: #FFF8EF;
 $charcoal: #3D3D3D;
 $lavender: #F8B8FF;
@@ -7,7 +7,7 @@ $aqua: #2EB3C0;
 $navy: #022E61;
 
 header li {
-	font-family: $fancy_font;
+	font-family: $font;
   text-transform: lowercase;
 	color: $ivory;
   @media only screen and (max-width: 320px) {
@@ -43,31 +43,30 @@ header li {
 header {
 	position: absolute;
 	width: 100%;	
-  color: $lavender;
   height: 20%;
   opacity: 0.5;
 }
 
 header #name {
 	font-family: $fancy_font;
-  text-transform: uppercase;
 	font-size: 50px;
 	float: left;
-  width: 45%;
+  width: 50%;
 	margin-left: 2%;
-	margin-top: 3%;
+	margin-top: 1%;
 	color: $navy;
 }
  
 #name p {
 	font-size: x-large;
+  font-family: $font;
 	text-align: center;
   color: $navy;
 }
 
 .nav_bar {
 	float: right;
-  width: 50%;
+  width: 40%;
 	margin-top: 2%;
 }
 
