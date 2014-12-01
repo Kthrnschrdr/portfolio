@@ -13,16 +13,14 @@
   <header> 
     <div class="profile_pic"><img src=""></img>
     <div id="name">Kathryn Schroeder
-    <p>web development</p>
+      <p>web development</p>
     </div>
-    <ul>
+    <div class="nav_bar"><ul>
       <li><%= link_to "Projects", projects_path %></li>
       <li><%= link_to "About", links_path %></li>
-      <li><%= link_to "Contact", new_contact_path %></li>
-      <% if current_user = nil %>
       <li><%= link_to "Log In", login_path %></li>
-      <% end %>
     </ul>
+    </div>
     <div id="clear_float"></div>
   </header>
 
@@ -40,7 +38,6 @@
         You are not logged in.
       <% end %>
     </div>
-  </body>
 
 <%= yield %>
 
