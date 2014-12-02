@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
 <link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
-<head>
   <title>Portfolio</title>
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -11,7 +11,6 @@
 
 <div class="container">
   <header> 
-    <div class="profile_pic"><img src=""></img>
     <div id="name">Kathryn Schroeder
       <p>web design and development</p>
     </div>
@@ -19,7 +18,7 @@
       <li><%= link_to "Projects", projects_path %></li>
       <li><%= link_to "About", links_path %></li>
       <li><%= link_to "Sign up", signup_path %></li>
-      <li><%= link_to "Log in", login_path %>
+      <li><%= link_to "Log in", login_path %></li>
     </ul>
     </div>
     <div id="clear_float"></div>
