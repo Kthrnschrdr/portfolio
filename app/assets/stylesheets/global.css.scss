@@ -99,11 +99,13 @@ p {
 
 .each_project {
   float: left;
-  width: 30%;
-  padding: 60px;
+  width: 18%;
+  height: 400px;
+  padding: 30px;
   background-color: $ivory;
   border-radius: 10px;
-  margin-left: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 .each_project p {
@@ -115,7 +117,7 @@ p {
 
 .each_project img {
   width: 110%;
-  margin-left: -20px;
+  margin-left: -10px;
 }
 
 #contact_form {
