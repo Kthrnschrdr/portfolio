@@ -6,7 +6,7 @@ $lavender: #F8B8FF;
 $aqua: #2EB3C0;
 $navy: #022E61;
 
-//layout
+//overall layout
 
 .container {
 	background-color: #FFF5FA;
@@ -27,7 +27,7 @@ header #name {
 	font-family: $fancy_font;
 	font-size: 50px;
 	float: left;
-  width: 50%;
+  width: 55%;
 	margin-left: 2%;
 	margin-top: 1%;
 	color: $navy;
@@ -77,7 +77,7 @@ header li {
 
 .nav_bar {
 	float: right;
-  width: 40%;
+  width: 35%;
 	margin-top: 2%;
 }
 
