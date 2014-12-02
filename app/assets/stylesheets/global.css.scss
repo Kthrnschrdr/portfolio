@@ -101,17 +101,21 @@ p {
   float: left;
   width: 30%;
   padding: 60px;
+  background-color: $ivory;
+  border-radius: 10px;
+  margin-left: 30px;
 }
 
 .each_project p {
   text-align: center;
   margin: 0 auto;
   padding-bottom: 20px;
+  font-size: x-large;
 }
 
 .each_project img {
   width: 110%;
-  margin: 0 auto;
+  margin-left: -20px;
 }
 
 #contact_form {
