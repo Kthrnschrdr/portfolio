@@ -198,10 +198,6 @@ a:link {
   text-decoration: none;
 }
 
-a:visited {
-  color: $aqua;
-}
-
 a:hover {
   color: $lavender;
   text-decoration: none;
@@ -217,13 +213,15 @@ a:hover {
 //navigation links at the bottom
 
 .bottom_link {
-  width: 10%;
+  width: 60px;
   float: right;
   margin-bottom: 5%;
   margin-right: 5%;
   font-family: $fancy_font;
   background-color: $aqua;
+  text-align: center;
   border-radius: 10px;
-  color: $navy;
-  height: 5%;
+  margin-top: 20px;
+  color: $ivory;
+  height: 24px;
 }
