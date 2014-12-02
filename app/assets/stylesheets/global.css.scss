@@ -20,8 +20,7 @@ $navy: #022E61;
 header {
 	position: absolute;
 	width: 100%;	
-  height: 20%;
-  opacity: 0.5;
+  height: 18%;
 }
 
 header #name {
@@ -34,13 +33,13 @@ header #name {
 	color: $navy;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 321px) and (max-width: 1199px) {
   header #name {
     font-size: xx-large;
   }
 }
 
-@media only screen and (min-width: 321px) and (max-width: 1199px) {
+@media only screen and (max-width: 321px) {
   header #name {
     font-size: large;
   }
@@ -50,16 +49,18 @@ header #name {
 	font-size: x-large;
   font-family: $font;
 	text-align: center;
-  color: $navy;
+  color: $aqua;
+  margin-top: -10px;
 }
 
 header li {
 	font-family: $font;
-  text-transform: lowercase;
+  text-transform: uppercase;
 	color: $ivory;
   text-decoration: none;
   @media only screen and (max-width: 320px) {
     font-size: large;
+    padding-top: 5%;
     width: 100%;
   }
   @media only screen and (min-width: 321px) and (max-width: 1199px) {
@@ -70,7 +71,7 @@ header li {
   @media screen and (min-width: 1200px) {
   	padding: 2%;
   	display: inline-block;
-    font-size: x-large;
+    font-size: large;
   }
 }
 
@@ -87,7 +88,7 @@ header #clear_float {
 //content
 
 h1 {
-  padding-top: 160px;
+  padding-top: 130px;
   text-transform: uppercase;
   color: #B8860B;
   text-align: center;
