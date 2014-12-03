@@ -1,5 +1,5 @@
 Portfolio::Application.routes.draw do
-  root :to => 'pages#welcome'
+  root :to => 'projects#index'
   
   get "login" => 'logins#new', :as => "login"
   post "login" => 'logins#create', :as => "create_login"

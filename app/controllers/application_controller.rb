@@ -15,5 +15,6 @@ class ApplicationController < ActionController::Base
     end
   end
   
-  helper_method :currect_user
+  helper_method :current_user
+  
 end
