@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  skip_before_filter :authorize, :only => [:index, :new, :create]
   
   def new
     @user = User.new
@@ -6,12 +7,10 @@ class UsersController < ApplicationController
   
   def create
     @user = User.new(params[:user])
-    
     if @user.save
-      redirect_to root_path
+      redirect_to root_path, :notice => "You're in!"
     else
-      flash[:alert] = "Invalid.  Please try again."
-      render 'new'
+      render :new
     end
   end
 end

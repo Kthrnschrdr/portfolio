@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-   skip_before_filter :authorize, :only => [:new]
+   skip_before_filter :authorize, :only => [:new, :create]
   
   def index
       @contacts = Contact.all
