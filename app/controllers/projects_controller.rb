@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  skip_before_filter :authorize, :only => [:index, :new, :create]
+  skip_before_filter :authorize, :only => [:index, :new, :create, :show]
   
   def index
     @projects = Project.all
