@@ -2,7 +2,7 @@
 <html>
 <head>
   <link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
   <title>Portfolio</title>
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -11,14 +11,14 @@
 <div class="container">
 <body>
   <header> 
-    <div id="name">Kathryn Schroeder
+    <div id="name">K. Schroeder
       <p>web design and development</p>
     </div>
-    <div class="nav_bar"><ul>
+    <div class="nav_bar">
     <% if current_user %>
-      <li><%= link_to "Projects", projects_path %></li>
-      <li><%= link_to "About", links_path %></li>
-      <li><%= link_to "Log out", logout_path %></li>
+      <a href="/projects">Projects</a>
+      <a href="/links">Resume</a>
+      <a href="/logout">Log Out</a>
     <% else %>
       <li><%= link_to "Projects", projects_path %></li>
       <li><%= link_to "About", links_path %></li>

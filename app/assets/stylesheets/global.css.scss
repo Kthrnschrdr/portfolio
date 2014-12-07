@@ -1,18 +1,22 @@
-$font: 'Lora', serif;
+$font: 'Roboto', sans-serif;
 $fancy_font: 'Monoton', cursive;
-$ivory: #FFF8EF;
+$ivory: #FFF3FA;
 $charcoal: #3D3D3D;
-$lavender: #F8B8FF;
-$aqua: #2EB3C0;
+$black: #2C2C30;
+$aqua: #4290C0;
 $navy: #022E61;
 
 //overall layout
 
 .container {
-	background-color: #FFF5FA;
+	background-color: $black;
   width: 100%;
-  height: 250%;
+  height: 100%;
   position: absolute;
+  background-image: image-url('self.jpeg');
+  opacity: .9;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 //header and nav bar
@@ -25,12 +29,12 @@ header {
 
 header #name {
 	font-family: $fancy_font;
-	font-size: 50px;
+	font-size: 80px;
 	float: left;
   width: 55%;
 	margin-left: 2%;
 	margin-top: 1%;
-	color: $navy;
+	color: $ivory;
 }
 
 @media screen and (min-width: 321px) and (max-width: 1199px) {
@@ -48,15 +52,15 @@ header #name {
 #name p {
 	font-size: x-large;
   font-family: $font;
-	text-align: center;
+	margin-left: 1%;
   color: $aqua;
   margin-top: -10px;
 }
 
-header li {
+a {
 	font-family: $font;
   text-transform: uppercase;
-	color: $ivory;
+	color: $black;
   text-decoration: none;
   @media only screen and (max-width: 320px) {
     font-size: large;
@@ -71,14 +75,15 @@ header li {
   @media screen and (min-width: 1200px) {
   	padding: 2%;
   	display: inline-block;
-    font-size: large;
+    font-size: x-large;
   }
 }
 
 .nav_bar {
 	float: right;
-  width: 35%;
+  width: 30%;
 	margin-top: 2%;
+  display: inline-block;
 }
 
 header #clear_float {
@@ -88,16 +93,17 @@ header #clear_float {
 //content
 
 h1 {
+  font-family: $font;
   padding-top: 130px;
   text-transform: uppercase;
-  color: #B8860B;
+  color: $black;
   text-align: center;
   margin-right: 5%;
   position: relative;
 }
 
 p {
-  color: #B8860B;
+  color: $black;
   text-align: center;
   margin-right: 5%;
   position: relative;
@@ -105,40 +111,33 @@ p {
 }
 
 .links, .projects, .contacts {
-  color: $navy;
+  color: $black;
   font-family: $font;
   text-align: center;
   text-transform: lowercase;
   font-size: xx-large;
   margin: 0 auto;
   padding: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
   position: relative;
 }
 
 //project specific pages
 
 .each_project {
-  float: left;
-  width: 18%;
-  height: 400px;
-  padding: 30px;
-  background-color: $ivory;
-  border-radius: 10px;
-  margin-left: 20px;
-  margin-bottom: 30px;
+  width: 100%;
+  height: 18%;
+  background-color: $charcoal;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .each_project p {
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 20px;
-  font-size: x-large;
-}
-
-.each_project img {
-  width: 110%;
-  margin-left: -10px;
+  font: $font;
+  color: #000;
+  font-size: 60px;
 }
 
 .project {
@@ -200,7 +199,7 @@ a:link {
 }
 
 a:hover {
-  color: $lavender;
+  color: $black;
   text-decoration: none;
 } 
 
