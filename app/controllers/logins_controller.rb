@@ -1,5 +1,5 @@
 class LoginsController < ApplicationController
-  skip_before_filter :require_login, except: [:destroy]
+  skip_before_filter :authorize, :only => [:new, :create]
   
   def new
   end
@@ -8,7 +8,7 @@ class LoginsController < ApplicationController
     user = User.find_by_email(params[:email])
     if user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to articles_path
+      redirect_to projects_path
     else
       raise "Invalid login."
     end

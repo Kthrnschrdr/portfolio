@@ -14,18 +14,16 @@
     <div id="name">K. Schroeder
       <p>web design and development</p>
     </div>
-    <div class="nav_bar">
     <% if current_user %>
       <a href="/projects">Projects</a>
       <a href="/links">Resume</a>
-      <a href="/logout">Log Out</a>
-    <% else %>
-      <li><%= link_to "Projects", projects_path %></li>
-      <li><%= link_to "About", links_path %></li>
-      <li><%= link_to "Sign up", signup_path %></li>
-      <li><%= link_to "Log in", login_path %></li>
+      <a href="/logout">Log Out</a>    
+    <% else %>   
+      <a href="/projects">Projects</a>
+      <a href="/links">About</a>
+      <a href="/signup">Sign Up</a>
+      <a href="/login">Log In</a>
     <% end %>
-    </ul></div>
     <div id="clear_float"></div>
   </header>
   <div class="flash">

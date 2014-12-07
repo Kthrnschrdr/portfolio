@@ -62,7 +62,6 @@ a {
   text-decoration: none;
   @media only screen and (max-width: 320px) {
     font-size: large;
-    padding-top: 5%;
     width: 100%;
   }
   @media only screen and (min-width: 321px) and (max-width: 1199px) {
@@ -75,13 +74,6 @@ a {
   	display: inline-block;
     font-size: x-large;
   }
-}
-
-.nav_bar {
-	float: right;
-  width: 30%;
-	margin-top: 2%;
-  display: inline-block;
 }
 
 header #clear_float {
