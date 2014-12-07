@@ -1,5 +1,5 @@
-<h1>Projects</h1>
 <div class="projects">
+  <h1>Projects</h1>
   <% @projects.each do |project| %>
   <div class="each_project">
     <p><%= link_to project.name, project_path(project.id) %></p>

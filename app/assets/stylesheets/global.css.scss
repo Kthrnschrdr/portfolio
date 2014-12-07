@@ -1,17 +1,15 @@
 $font: 'Roboto', sans-serif;
-$fancy_font: 'Monoton', cursive;
 $ivory: #FFF3FA;
 $charcoal: #3D3D3D;
 $black: #2C2C30;
-$aqua: #4290C0;
-$navy: #022E61;
+$aqua: #208099;
 
 //overall layout
 
 .container {
 	background-color: $black;
   width: 100%;
-  height: 125%;
+  height: 175%;
   position: absolute;
 }
 
@@ -20,16 +18,17 @@ $navy: #022E61;
 header {
 	position: absolute;
 	width: 100%;	
+  height: 100%;
   background-image: image-url('self.jpeg');
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 header #name {
-	font-family: $fancy_font;
-	font-size: 80px;
+	font-family: $font;
+	font-size: 60px;
 	float: left;
-  width: 55%;
+  width: 45%;
 	margin-left: 2%;
 	margin-top: 1%;
 	color: $ivory;
@@ -50,7 +49,6 @@ header #name {
 #name p {
 	font-size: x-large;
   font-family: $font;
-	margin-left: 1%;
   color: $aqua;
   margin-top: -10px;
 }
@@ -83,8 +81,7 @@ header #clear_float {
 //content
 
 h1 {
-  font-family: $fancy_font;
-  padding-top: 130px;
+  font-family: $font;
   text-transform: uppercase;
   color: $black;
   text-align: center;
@@ -105,10 +102,9 @@ p {
   font-family: $font;
   text-align: center;
   text-transform: lowercase;
-  font-size: xx-large;
+  font-size: large;
   margin: 0 auto;
-  padding: 10px;
-  padding-top: 20px;
+  margin-top: 27%;
   position: relative;
 }
 
@@ -141,7 +137,7 @@ p {
 }
 
 .project img {
-  width: 60%;
+  width: 50%;
   height: 100%;
 }
 
@@ -157,8 +153,8 @@ p {
   width: 20%;
   border-radius: 10px;
   height: 5%;
-  background-color: $aqua;
-  color: $navy;
+  background-color: $charcoal;
+  color: $ivory;
   font-family: $font;
   text-align: center;
   text-transform: lowercase;
@@ -177,7 +173,7 @@ p {
   border-radius: 10px; 
   width: 70%;
   height: 100%;
-  color: $navy;
+  color: $black;
   margin-bottom: 5%;
 }
 
@@ -185,12 +181,12 @@ p {
 
 .middle_link {
   text-transform: uppercase;
-  color: $navy;
+  color: $charcoal;
   font-size: large;
 }
 
 a:link {
-  color: $navy;
+  color: $charcoal;
   text-decoration: none;
 }
 
@@ -213,8 +209,8 @@ a:hover {
   float: right;
   margin-bottom: 5%;
   margin-right: 5%;
-  font-family: $fancy_font;
-  background-color: $aqua;
+  font-family: $font;
+  background-color: $black;
   text-align: center;
   border-radius: 10px;
   margin-top: 20px;
