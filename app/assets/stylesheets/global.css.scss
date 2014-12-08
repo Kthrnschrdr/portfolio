@@ -1,5 +1,5 @@
 $font: 'Roboto', sans-serif;
-$ivory: #FFF3FA;
+$ivory: #FFF4F0;
 $charcoal: #3D3D3D;
 $black: #2C2C30;
 $aqua: #208099;
@@ -9,8 +9,12 @@ $aqua: #208099;
 .container {
 	background-color: $black;
   width: 100%;
-  height: 175%;
+  height: 100%;
   position: absolute;
+  background-image: image-url('self.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 1;
 }
 
 //header and nav bar
@@ -19,9 +23,7 @@ header {
 	position: absolute;
 	width: 100%;	
   height: 100%;
-  background-image: image-url('self.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100%;
+  z-index: 5;
 }
 
 header #name {
@@ -32,6 +34,7 @@ header #name {
 	margin-left: 2%;
 	margin-top: 1%;
 	color: $ivory;
+  
 }
 
 @media screen and (min-width: 321px) and (max-width: 1199px) {
@@ -47,10 +50,15 @@ header #name {
 }
  
 #name p {
-	font-size: x-large;
   font-family: $font;
   color: $aqua;
   margin-top: -10px;
+  @media only screen and (min-width: 321px) and (max-width: 1199px) {
+    font-size: x-large;
+  }
+  @media only screen and (max-width: 320px) {
+    font-size: medium;
+  }
 }
 
 a {
@@ -87,6 +95,7 @@ h1 {
   text-align: center;
   margin-right: 5%;
   position: relative;
+  z-index: 5;
 }
 
 p {
@@ -95,6 +104,7 @@ p {
   margin-right: 5%;
   position: relative;
   font-size: large;
+  z-index: 5;
 }
 
 .links, .projects, .contacts {
@@ -102,28 +112,33 @@ p {
   font-family: $font;
   text-align: center;
   text-transform: lowercase;
-  font-size: large;
+  font-size: medium;
   margin: 0 auto;
-  margin-top: 27%;
+  margin-top: 12%;
   position: relative;
+  z-index: 5;
 }
 
 //project specific pages
 
 .each_project {
-  width: 100%;
+  width: 75%;
   height: 18%;
   background-color: $charcoal;
+  color: black;
+  font-size: xx-large;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
+  position: relative;
+  opacity: .7;
 }
 
 .each_project p {
   text-align: center;
   margin: 0 auto;
   font: $font;
-  color: #000;
-  font-size: 60px;
+  color: $ivory;
+  font-size: xx-large;
 }
 
 .project {
@@ -151,7 +166,6 @@ p {
 
 .action {
   width: 20%;
-  border-radius: 10px;
   height: 5%;
   background-color: $charcoal;
   color: $ivory;
@@ -170,7 +184,6 @@ p {
   font-size: large;
   background-color: $ivory;
   opacity: 0.5;
-  border-radius: 10px; 
   width: 70%;
   height: 100%;
   color: $black;
@@ -212,7 +225,6 @@ a:hover {
   font-family: $font;
   background-color: $black;
   text-align: center;
-  border-radius: 10px;
   margin-top: 20px;
   color: $ivory;
   height: 24px;
