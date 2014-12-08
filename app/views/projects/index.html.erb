@@ -1,11 +1,12 @@
 <div class="projects">
-  <h1>Projects</h1>
   <% @projects.each do |project| %>
   <div class="each_project">
     <p><%= link_to project.name, project_path(project.id) %></p>
   </div>
   <% end %>
 </div>
+
+<p>  Call me Katie.  I'm a recent graduate of Omaha Code School looking for a way to integrate my art background, passion for community, and love of learning into a meaningful and creative Coding career.  See things through my eyes.  Contact me here. </p>    
 
 <% if current_user %>
 	<div class="bottom_link"><%= link_to "New Project", new_project_path %></div>

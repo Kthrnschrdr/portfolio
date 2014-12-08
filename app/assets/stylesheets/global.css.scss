@@ -9,12 +9,8 @@ $aqua: #208099;
 .container {
 	background-color: $black;
   width: 100%;
-  height: 100%;
+  height: 125%;
   position: absolute;
-  background-image: image-url('self.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  z-index: 1;
 }
 
 //header and nav bar
@@ -22,7 +18,10 @@ $aqua: #208099;
 header {
 	position: absolute;
 	width: 100%;	
-  height: 100%;
+  height: 90%;
+  background-image: image-url('self.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%;
   z-index: 5;
 }
 
@@ -53,11 +52,11 @@ header #name {
   font-family: $font;
   color: $aqua;
   margin-top: -10px;
-  @media only screen and (min-width: 321px) and (max-width: 1199px) {
-    font-size: x-large;
+  @media only screen and (min-width: 321px) and (max-width: 1200px){
+    font-size: large;
   }
   @media only screen and (max-width: 320px) {
-    font-size: medium;
+    font-size: 14px;
   }
 }
 
@@ -99,9 +98,12 @@ h1 {
 }
 
 p {
-  color: $black;
+  color: $ivory;
+  font-family: $font;
+  width: 60%;
   text-align: center;
-  margin-right: 5%;
+  margin-top: 10%;
+  margin: 0 auto;
   position: relative;
   font-size: large;
   z-index: 5;
@@ -114,7 +116,7 @@ p {
   text-transform: lowercase;
   font-size: medium;
   margin: 0 auto;
-  margin-top: 12%;
+  margin-top: 8%;
   position: relative;
   z-index: 5;
 }
@@ -122,13 +124,13 @@ p {
 //project specific pages
 
 .each_project {
-  width: 75%;
-  height: 18%;
-  background-color: $charcoal;
-  color: black;
+  width: 55%;
+  height: 16%;
+  background-color: $ivory;
+  color: $black;
   font-size: xx-large;
   margin: 0 auto;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
   position: relative;
   opacity: .7;
 }
@@ -145,10 +147,14 @@ p {
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  padding-top: 40px;
+  margin-top: 28%;
+  padding-top: 5px;
   background-color: $ivory;
   font: $font;
   padding: 10px;
+  @media only screen and (max-width: 580px) {
+    margin-top: 27%;
+  }
 }
 
 .project img {
